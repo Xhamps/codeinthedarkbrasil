@@ -711,3 +711,61 @@ body
   footer .social-networks
     img
       width 50%
+
+#lightbox-map 
+  display none
+.lightbox 
+  display none
+  position fixed
+  top 0
+  right 0
+  left 0
+  bottom 0
+  margin auto
+  height 100%
+  width 100%
+  z-index 9
+  background rgba(0,0,0,0.7)
+
+input#lightbox-map:checked + .lightbox 
+  display block
+.pointer
+  cursor pointer
+  
+.link
+  cursor pointer
+  text-decoration underline
+  &:hover
+    text-decoration none
+.lightbox-content 
+  background #fff
+  position absolute
+  top 0
+  right 0
+  left 0
+  bottom 0
+  margin auto
+  width 70%
+  height 70%
+  +below(520px)
+    width 90%
+    height 90%
+
+.lightbox-close 
+  background-image url(../img/close-sprite.png)
+  background-size 96px 24px
+  background-color #fff
+  height 24px
+  width 24px
+  cursor pointer
+  display inline-block
+  position absolute
+  top -24px
+  right 0
+
+.google-map 
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
