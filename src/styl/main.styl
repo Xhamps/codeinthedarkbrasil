@@ -219,6 +219,7 @@ body
   display block
   img
     display block
+    max-width 100%
   &:before
   &:after
     content ''
@@ -610,6 +611,55 @@ body
   margin-bottom 30px
   color #fff
   display block
+
+.schedule
+  .container-title
+    font-size 130px
+    +below(1024px)
+      font-size 100px
+    +below(720px)
+      font-size 70px
+    +below(600px)
+      font-size 50px
+    +below(420px)
+      font-size 35px
+  &-list
+    display flex
+    flex-shrink 0
+    flex-direction row
+    padding-top 20px
+    list-style none
+    +below(720px)
+      flex-direction column
+
+    li
+      width 14.285714286%
+      text-align center
+      display flex
+      flex-direction column
+      align-items center
+
+      &:nth-child(2n+1)
+        padding-top 60px
+        .schedule-title
+          order 2
+        .schedule-time
+          order 1
+
+      .schedule-title
+        order 1
+
+      .schedule-time
+        order 2
+        color $cdd-light-green
+        font-weight bold
+        font-size 25px
+
+      +below(720px)
+        width 100%
+        padding-bottom: 20px
+        &:nth-child(2n+1)
+          padding-top: 0
 
 +below(600px)
   .video-container
