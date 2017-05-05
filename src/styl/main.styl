@@ -90,6 +90,11 @@ body
       margin-right 20px
       position relative
       top -14px
+  a
+    display inline-block
+    vertical-align middle
+    &:first-child
+      padding-right 25px
 
 .header-inscription
   margin 20px 0
@@ -478,6 +483,12 @@ body
     font-size 11px
     font-weight 700
 
+  &.co-director
+    dd
+      a
+        display inline-block
+        vertical-align middle
+
 .host
   position relative
   display table
@@ -700,9 +711,9 @@ body
     img
       width 50%
 
-#lightbox-map 
+#lightbox-map
   display none
-.lightbox 
+.lightbox
   display none
   position fixed
   top 0
@@ -715,17 +726,17 @@ body
   z-index 9
   background rgba(0,0,0,0.7)
 
-input#lightbox-map:checked + .lightbox 
+input#lightbox-map:checked + .lightbox
   display block
 .pointer
   cursor pointer
-  
+
 .link
   cursor pointer
   text-decoration underline
   &:hover
     text-decoration none
-.lightbox-content 
+.lightbox-content
   background #fff
   position absolute
   top 0
@@ -739,7 +750,7 @@ input#lightbox-map:checked + .lightbox
     width 90%
     height 90%
 
-.lightbox-close 
+.lightbox-close
   background-image url(../img/close-sprite.png)
   background-size 96px 24px
   background-color #fff
@@ -751,7 +762,7 @@ input#lightbox-map:checked + .lightbox
   top -24px
   right 0
 
-.google-map 
+.google-map
   position absolute
   top 0
   left 0
