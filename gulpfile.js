@@ -34,7 +34,7 @@ gulp.task('js', function () {
 gulp.task('serve', ['js', 'image', 'style'], function() {
   browserSync.init({
     open: false,
-    port: 3000,
+    port: 3001,
     notify: true,
     server: {
       baseDir: "./"
