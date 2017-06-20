@@ -14,7 +14,7 @@ body
   padding 80px 0
 
 .body-bg
-  background-image url(../img/header-bg.png)
+  background-image url(../img/header-bg.jpg)
   background-repeat no-repeat
   background-position center top
 
@@ -55,7 +55,12 @@ body
   text-align center
   +below(520px)
     width 55%
-    padding-left 5px
+    padding-left 15px
+
+  .header-title
+    span
+      margin-bottom 10px
+
 .header-title
   color white
   font-size 15px
@@ -90,14 +95,22 @@ body
       margin-right 20px
       position relative
       top -14px
+
+      +below(770px)
+        display block
   a
     display inline-block
     vertical-align middle
     &:first-child
       padding-right 25px
+    + a
+      margin-left 20px
+      +below(770px)
+        margin-top 20px
+
 
 .header-inscription
-  margin 20px 0
+  margin 20px 0 0
   a
     display inline-block
     padding 15px 35px
@@ -182,6 +195,10 @@ body
     display table-cell
     p, strong
       opacity 0.3
+
+  +below(770px)
+    width 100%
+
   +below(520px)
     width 100%
     text-align center
@@ -429,7 +446,7 @@ body
 .winner-container
   position relative
   padding-bottom 56%
-  background url(../img/winner.png)
+  background url(../img/winner.jpg)
   background-size cover
   background-position center center
 
@@ -487,7 +504,12 @@ body
     dd
       a
         display inline-block
+        margin-top 20px
+        margin-left 20px
         vertical-align middle
+        +below(1024px)
+          display block
+          margin-left 0
 
 .host
   position relative
@@ -588,6 +610,8 @@ body
     color inherit
     width 70%
     float left
+    +below(350px)
+      width 60%
   button
     float right
     display table-cell
@@ -669,9 +693,9 @@ body
 
       +below(720px)
         width 100%
-        padding-bottom: 20px
+        padding-bottom 20px
         &:nth-child(2n+1)
-          padding-top: 0
+          padding-top 0
 
 +below(600px)
   .video-container
