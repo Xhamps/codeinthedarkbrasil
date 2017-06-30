@@ -4,7 +4,8 @@
   "description": "CodeintheDarkBR website",
   "main": "server.js",
   "scripts": {
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "start": "./node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
