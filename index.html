@@ -18,7 +18,10 @@
   <meta property="og:image:height" content="630">
   <script src="./dist/js/lazysizes.min.js" async></script>
 
-
+  <link rel="apple-touch-icon" sizes="180x180" href="./dist/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./dist/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./dist/img/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./dist/img/favicon.ico">
 
   <link rel="stylesheet" href="./dist/css/main.css?123">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -41,14 +44,14 @@
     <div class="col-50 main-informations">
       <h2 class="header-title">
         <span>Próxima edição</span>
-        1 de julho/2017
+        21 de janeiro/2023
       </h2>
-      <p class="header-address">iMasters Developer HUB <br>
+      <!-- <p class="header-address">iMasters Developer HUB <br>
         Rua Oscar Freire, 2379
       </p>
       <h3 class="header-inscription">
         <span>EVENTO GRATUITO</span>
-      </h3>
+      </h3> -->
 
       <span class="social-networks-label">Acompanhe nossas redes sociais</span>
       <ul class="social-networks">
@@ -71,13 +74,19 @@
     </div>
     <div class="clearfix col-50 co-partner">
       <span class="partner-label">Edição Especial</span>
-      <a href="http://frontinsampa.com.br/" target="_blank" title="Frontinsampa 2017">
-        <img src="./dist/img/frontinsampa-logo-mini.png" alt="Frontinsampa 2017">
-      </a>
-      <a href="https://jsexperience2017.imasters.com.br" target="_blank" title="JS Experience iMasters">
-        <img src="./dist/img/jsexperience-logo.png" alt="iMasters Logo">
+      <a href="http://conferenciacssbrasil.com.br/" target="_blank" title="Conferência CSS Brasil 2023">
+        <img data-src="./dist/img/conferencia_css_80.png" class="lazyload" alt="Conferência CSS Brasil 2023">
       </a>
     </div>
+
+    <div class="clearfix col-50 co-partner">
+      <span class="partner-label">Uma super produção</span>
+      <a href="http://frontinsampa.com.br/" target="_blank" title="Uma super produção FRONTIN">
+        <img data-src="./dist/img/logo-frontin-code.png" class="lazyload" alt="Uma super produção FRONTIN">
+      </a>
+    </div>
+
+
   </header>
   <section class="expert container clearfix">
     <div class="col-50 roles">
@@ -100,12 +109,12 @@
         </li>
       </ul>
       <p class="large-date">
-        <strong>2017</strong>
-        <span>Quem vencerá?</span>
+        <strong>2023</strong>
+        <span>VOLTAMOS!</span>
       </p>
     </div>
     <div class="col-50 video-container">
-      <a class="video" href="https://www.facebook.com/codeinthedarkbr/videos/1759924110917477/" target="_blank">
+      <a class="video" href="https://www.instagram.com/p/CL4pR4Ah9-r/" target="_blank">
         <img src="dist/img/video-thumb-mini.jpg" width="600" height="524" data-src="dist/img/video-thumb.png" class="lazyload" alt="Ver vídeo do evento no Facebook">
       </a>
     </div>
@@ -243,11 +252,16 @@
       <li><span class="schedule-title">Round 2</span> <span class="schedule-time">20h30</span></li>
       <li><span class="schedule-title">Round 3</span> <span class="schedule-time">21h</span></li>
       <li><span class="schedule-title">Round 4</span> <span class="schedule-time">21h30</span></li>
-      <li><span class="schedule-title">Round Locaweb (final)</span> <span class="schedule-time">22h30</span></li>
+      <li><span class="schedule-title">Round Final</span> <span class="schedule-time">22h30</span></li>
     </ol>
+
+   
+      <p class="description-line"><em>Os horários e programação podem sofrer mundanças sem aviso prévio.</em></p>
+
+  
   </section>
 
-  <section class="staff has-title container">
+  <!-- <section class="staff has-title container">
     <h2 class="container-title">STAFF</h2>
     <a class="staff-member" href="https://twitter.com/elvisdetona" target="_blank">
       <dl>
@@ -315,7 +329,7 @@
         </dt>
       </dl>
     </a>
-  </section>
+  </section> -->
   <section class="faq has-title container">
     <h2 class="container-title">FAQ</h2>
     <input type="radio" class="quest-trigger" id="quest1" name="quest">
@@ -345,8 +359,8 @@
     </label>
     <input type="radio" class="quest-trigger" id="quest6" name="quest">
     <label class="faq-quest" for="quest6">
-      <p class="quest-title">Se eu for no FrontinSampa, já posso ir no evento sem me inscrever?</p>
-      <p class="quest-response">Não. Você precisa se inscrever também no CodeintheDark. Mas quem for no FrontinSampa terá mais chances de participar!</p>
+      <p class="quest-title">Se eu fizer a inscrição na Conferência CSS Brasil, já posso ir no Code In The Dark?</p>
+      <p class="quest-response">Sim. Mas você terá que fazer novamente um rápido credenciamento no local/entrada do Code In The Dark</p>
     </label>
     <input type="radio" class="quest-trigger" id="quest7" name="quest">
     <label class="faq-quest" for="quest7">
@@ -366,7 +380,13 @@
     <input type="radio" class="quest-trigger" id="quest10" name="quest">
     <label class="faq-quest" for="quest10">
       <p class="quest-title">Quem for pra assistir, vai poder ajudar os participantes?</p>
-      <p class="quest-response">Negativo! O público não vai poder dar pitaco e nem assoprar o que está vendo na tela para os participantes. Quem fizer isso, desclassificará automaticamente o competidor!</p>
+      <p class="quest-response">Sim! Mas só falando... é contra as regras tocar ou codar no lugar da pessoa participante. O público vai poder dar pitaco e dar dicas no que está vendo na tela para os participantes. Quem burlar as regras, desclassificará automaticamente o competidor!</p>
+    </label>
+
+    <input type="radio" class="quest-trigger" id="quest11" name="quest">
+    <label class="faq-quest" for="quest11">
+      <p class="quest-title">Se eu não for na Conferência CSS Brasil, mesmo assim eu posso ir no Code In The Dark?</p>
+      <p class="quest-response">Sim! Nós vamos sortear alguns ingressos próximo ao dia do evento, exclusivamente nas nossas redes sociais (twitter e instagram). Como essa edição é uma parceria com a Conferência CSS Brasil e com produção da FRONTIN, a maioria dos ingressos do Code In The Dark serão para os inscritos na Conferência CSS Brasil.</p>
     </label>
   </section>
 
@@ -377,7 +397,7 @@
     </dl>
   </div>
 
-  <section class="host container clearfix">
+  <!-- <section class="host container clearfix">
     <img src="dist/img/bernard.png" class="host-image" alt="Bernard De Luna">
     <header class="host-details">
       <h2 class="highlight-title">
@@ -387,26 +407,24 @@
         Atua em projetos digitais desde 1999, especializado em Front-end, Design Funcional e Marketing Digital. Atualmente é empresário e CEO da Bunee.io.
       </p>
     </header>
-  </section>
+  </section> -->
 
 
   <section class="partners container clearfix">
     <dl class="partner co-director">
       <dt>Edição Especial</dt>
       <dd>
-        <a href="http://frontinsampa.com.br/" target="_blank" title="Frontinsampa 2017">
-          <img data-src="./dist/img/frontinsampa-logo.png" class="lazyload" alt="Frontinsampa 2017">
+        <a href="http://conferenciacssbrasil.com.br/" target="_blank" title="Conferência CSS Brasil">
+          <img data-src="./dist/img/conferencia_css_80.png" class="lazyload" alt="Conferência CSS Brasil">
         </a>
-        <a href="https://jsexperience2017.imasters.com.br" target="_blank" title="JS Experience iMasters">
-          <img data-src="./dist/img/jsexperience-logo.png" class="lazyload" alt="iMasters Logo">
-        </a>
+       
       </dd>
     </dl>
     <dl class="partner co-director">
-      <dt>Patrocínio Ouro:</dt>
+      <dt>Uma super produção:</dt>
       <dd>
-        <a href="http://www.locaweb.com.br/" target="_blank">
-          <img src="dist/img/logo_locaweb.png" alt="Locaweb">
+        <a href="http://www.frontinsampa.com.br/" target="_blank">
+          <img src="dist/img/logo-frontin-code.png" alt="FRONTIN">
         </a>
       </dd>
     </dl>
@@ -430,17 +448,22 @@
       <li><a href="https://www.instagram.com/codeinthedarkbrasil/" target="_blank"><img src="dist/img/instagram-footer.png" alt="Instagram - @codeinthedarkbrasil"></a></li>
     </ul>
     <p class="contact">Dúvidas e mais informações: <a href="mailto:codeinthedarkbr@gmail.com">codeinthedarkbr@gmail.com</a></p>
-    <p class="subscribe-label">SAIBA AS NOVIDADES</p>
+
+    <!-- <p class="subscribe-label">SAIBA AS NOVIDADES</p>
     <form action="//codeinthedark.us13.list-manage.com/subscribe/post?u=1c329548a1cf3f54d94031377&amp;id=dffe11db54" method="post" id="newsletter-subscribe" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="true">
       <div class="subscribe">
         <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Seu email" required="">
         <button type="submit" name="subscribe" id="mc-embedded-subscribe">Enviar</button>
         <label for="mce-EMAIL" class="submit-msg"></label>
       </div>
-    </form>
-    <p class="copyright">Code In The Dark BR - Edição São Paulo 2017</p>
+    </form> -->
 
-    <a class="copyright" href="http://pt-br.confcodeofconduct.com/" target="_blank">Código de conduta</a>
+    <section class="partners container clearfix">
+
+      <p class="copyright">Code In The Dark BR - Edição São Paulo 2023</p>
+      <a class="copyright" href="http://pt-br.confcodeofconduct.com/" target="_blank">Código de conduta</a>
+    </section>
+    
   </footer>
 
   <script src="./dist/js/jquery.min.js"></script>
