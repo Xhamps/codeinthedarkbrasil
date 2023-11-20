@@ -30,5 +30,8 @@
     "gulp-stylus": "^2.6.0",
     "rupture": "^0.6.2",
     "serve-static": "^1.10.2"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.11"
   }
 }
